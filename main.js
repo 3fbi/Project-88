@@ -1,10 +1,13 @@
 
-var canvas = new fabric.canvas('myCanvas');
+var canvas = new fabric.Canvas('myCanvas');
+
+var ball_obj = "";
+var hole_obj = "";
 
 ball_x = 0;
 ball_y = 0;
-hole_x = 400;
-hole_y = 800;
+hole_x = 950;
+hole_y = 400;
 
 
 block_image_width = 5;
@@ -18,11 +21,11 @@ function load_img()
 		hole_obj.scaleToHeight(50);
 		hole_obj.set({
 			top: hole_y,
-			left: hole_x
+			left:hole_x
 		});
 		canvas.add(hole_obj);
 	});
-	new_image();
+	//new_image();
 }
 
 function new_image()
